@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.7.4/tachyons.min.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+  </head>
+  <body class="w-100 sans-serif bg-white">
+
+    <main class="mw6 mv5 ph3 center">
+      <div id ="messages" class="max-h25"></div>
+      <div id="typing"></div>
+      <form id="chatbox" onSubmit="newestChat()">
+        <textarea class="input-reset ba b--black-20 pa2 mb2 db w-100"></textarea>
+        <input type="submit" class="f6 pointer ba0 no-underline br-pill ph3 pv2 mb2 dib white bg-dark-green" value="Send" />
+        <a href="/logout">Logout</a>
+      </form>
+    </main>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/js/chat.js"></script>
+  </body>
+</html>
